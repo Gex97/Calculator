@@ -1,0 +1,172 @@
+.korpus {
+	border-radius: 10px;
+	margin-left: 40%;
+	margin-top: 60px;
+	background-color: blue;
+	border: black;
+	width: 300px;
+	height: 500px;
+	box-shadow: 8px 7px 3px #999999;
+}
+
+.ekran {
+	color: blue;
+	font-size: 22px;
+	justify-content: center;
+	border-radius: 6px;
+	margin-top: 20px;
+	margin-left: 25px;
+	width: 250px;
+	height: 50px;
+    background-color: #f2f5e8;
+}
+
+.knopkeq {
+	border-radius: 25px;
+	margin-top: 25px;
+	margin-left: 20px;
+	width: 260px;
+	height: 405px;
+	background-color: #0bd6e8;
+}
+
+.string1 section:nth-of-type(1) p {
+     font-size: 18px;
+}
+
+.string1 section:nth-of-type(2) p {
+     font-size: 18px;
+}
+
+.string1 section:nth-of-type(3) p {
+     font-size: 25px;
+}
+
+.string1 section:nth-of-type(4) p {
+     font-size: 25px;
+}
+
+.string1 section:nth-of-type(5) {
+	background-color: #ec1b09;
+	color: black;
+}
+.string1 section:nth-of-type(5) p {
+	font-size: 25px;
+}
+
+.string1 section:nth-of-type(6) {
+	background-color: #ec1b09;
+	color: black;
+}
+
+.string1 section:nth-of-type(6) p {
+	font-size: 22px;
+}
+
+.string section p {
+	justify-content: center;
+	text-align: center;
+}
+
+.string1  {
+	justify-content: center;
+	display: flex;
+}
+.string1 section {
+    margin: 3px;
+	border-radius: 20px;
+	color: red;
+	background-color: #efd114;
+    width: 85px;
+    height: 75px;
+}
+
+
+.string1 section:hover {
+	background-color: blue;
+	box-shadow: 2px 2px #999999;
+}
+
+.string2  {
+	justify-content: center;
+	align-content: center;
+	display: flex;
+}
+
+.string2 section {
+	font-size: 22px;
+	color: red;
+	border-radius: 20px;
+	background-color: #efd114;
+	margin: 3px;
+    width: 52px;
+    height: 75px;
+}
+
+.string2 section:hover {
+	background-color: blue;
+}
+
+.string3 {
+	justify-content: center;
+	align-content: center;
+	display: flex;
+}
+
+.string3 section {
+	font-size: 22px;
+	color: red;
+	border-radius: 20px;
+	background-color: #efd114;
+	margin: 3px;
+    width: 52px;
+    height: 75px;
+}
+.string3 section:hover {
+	background-color: blue;
+}
+
+.string4 {
+	justify-content: center;
+	align-content: center;
+	display: flex;
+}
+
+.string4 section {
+	font-size: 22px;
+	color: red;
+	border-radius: 20px;
+	background-color: #efd114;
+	margin: 3px;
+    width: 52px;
+    height: 75px;
+}
+
+.string4 section:hover {
+	background-color: blue;
+}
+
+.string4 section p {
+	margin-left: 10px;
+}
+
+.string5 {
+	justify-content: center;
+	align-content: center;
+	display: flex;
+}
+
+.string5 section {
+
+	font-size: 22px;
+	color: red;
+	border-radius: 20px;
+	background-color: #efd114;
+	margin: 3px;
+    width: 52px;
+    height: 75px;
+}
+
+.string5 section:hover {
+	background-color: blue;
+}

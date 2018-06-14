@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>kalkulator</title>
+</head>
+<body>
+<section class="korpus">
+	<section class="ekran" id="ekran">0</section>
+	<section class="knopkeq">
+      	<section class="string1 string">
+			<section id="on"><p>ON / CE</p></section>
+			<section id="mrc"><p>MRC</p></section>
+			<section id="m-"><p>M-</p></section>
+			<section id="m+"><p>M+</p></section>
+			<section id="c"><p>C</p></section>
+			<section id="off"><p>OFF</p></section>
+	  	</section>
+
+		<section class="string2 string">
+			<section id="n7"><p>7</p></section>
+			<section id="n8"><p>8</p></section>
+			<section id="n9"><p>9</p></section>
+			<section id="n%"><p>%</p></section>
+			<section id="n1/2"><p>1/2</p></section>
+	  	</section>
+		<section class="string3 string">
+			<section id="n4"><p>4</p></section>
+	        <section id="n5"><p>5</p></section>
+			<section id="n6"><p>6</p></section>
+			<section id="n*"><p>*</p></section>
+			<section id="n/"><p>/</p></section>
+		</section>
+		<section class="string4 string">
+				<section id="n1"><p>1</p></section>
+				<section id="n2"><p>2</p></section>
+				<section id="n3"><p>3</p></section>	
+				<section id="n+"><p>+</p></section>
+				<section id="n-"><p>-</p></section>
+		</section>
+		<section class="string5 string">
+				<section id="n0"><p>0</p></section>
+				<section id="n00"><p>00</p></section>
+				<section id="n."><p>.</p></section>
+				<section id="n+/-"><p>+/-</p></section>	
+				<section id="n="><p>=</p></section>
+		</section>
+	</section>
+</section>
+<script type="text/javascript">
+      let operand,operator,history;
+      let value = "";
+      let isOn = true;
+
+      function calculate() {
+      	let ekran = document.getElementById("ekran");
+		switch(operator) {
+			case "+":
+				ekran.innerHTML = Number(operand) + Number(ekran.innerHTML);
+				break;
+			case "-":
+				ekran.innerHTML = Number(operand) - Number(ekran.innerHTML);
+				break;
+			case "*":
+				ekran.innerHTML = Number(operand) * Number(ekran.innerHTML);
+				break;
+            case "/":
+				ekran.innerHTML = Number(operand) / Number(ekran.innerHTML);
+				break;
+		}
+		value = "";
+      }
+
+      document.getElementById('n+/-').onclick = function() {
+      	let ekran = document.getElementById('ekran');
+      	ekran.innerHTML = "-" + value;
+      	value = ekran.innerHTML;
+      }
+
+      
+
+      document.getElementById('n.').onclick = function() {
+      	let ekran = document.getElementById('ekran');
+      	ekran.innerHTML = value + ".";
+      	value = ekran.innerHTML;
+      }
+
+      document.getElementById('n00').onclick = function() {
+      	let ekran = document.getElementById('ekran');
+      	ekran.innerHTML = value + "00";
+      	value = ekran.innerHTML;
+      }
+
+      document.getElementById('n0').onclick = function () {
+      	if (isOn) {
+			let ekran = document.getElementById('ekran');
+			ekran.innerHTML = value + '0';
+			value = ekran.innerHTML;
+		}
+	}
+
+	document.getElementById('n1').onclick = function () {
+		if (isOn) {
+			let ekran = document.getElementById('ekran');
+			ekran.innerHTML = value + '1';
+			value = ekran.innerHTML;
+		}
+	}
+
+	document.getElementById('n2').onclick = function () {
+		if (isOn) {
+			let ekran = document.getElementById('ekran');
+			ekran.innerHTML = value + '2';
+			value = ekran.innerHTML;
+		}
+	}
+
+	document.getElementById('n3').onclick = function () {
+		if (isOn) {
+			let ekran = document.getElementById('ekran');
+			ekran.innerHTML = value + '3' ;
+			value = ekran.innerHTML;
+		}
+	}
+
+	document.getElementById('n4').onclick = function () {
+		if (isOn) {
+			let ekran = document.getElementById('ekran');
+			ekran.innerHTML = value + '4' ;
+			value = ekran.innerHTML;
+		}
+	}
+
+	document.getElementById('n5').onclick = function () {
+		if (isOn) {
+			let ekran = document.getElementById('ekran');
+			ekran.innerHTML = value + '5' ;
+			value = ekran.innerHTML;
+		}
+	}
+
+	document.getElementById('n6').onclick = function () {
+		if (isOn) {
+			let ekran = document.getElementById('ekran');
+			ekran.innerHTML = value + '6' ;
+			value = ekran.innerHTML;
+		}
+	}
+
+
+	document.getElementById('n7').onclick = function () {
+		if (isOn) {
+			let ekran = document.getElementById('ekran');
+			ekran.innerHTML = value + '7';
+			value = ekran.innerHTML;
+		}
+	}
+
+	document.getElementById('n8').onclick = function () {
+		if (isOn) {
+			let ekran = document.getElementById("ekran");
+			ekran.innerHTML = value + "8" ;
+			value = ekran.innerHTML;
+		}
+	}
+
+	document.getElementById('n9').onclick = function () {
+		if (isOn) {
+			let ekran = document.getElementById('ekran');
+			ekran.innerHTML = value + '9';
+			value = ekran.innerHTML;
+	    }
+	}
+
+	document.getElementById('n+').onclick = function () {
+		if (operator) {
+			calculate();
+		}
+		let ekran = document.getElementById('ekran');
+		operand = ekran.innerHTML;
+		operator = "+";
+		value = "";
+	}
+
+	document.getElementById('n-').onclick = function () {
+		if (operator) {
+			calculate();
+		}
+		let ekran = document.getElementById('ekran');
+		operand = ekran.innerHTML;
+		operator = "-";
+		value = "";
+	}
+
+	document.getElementById('n*').onclick = function () {
+		if (operator) {
+			calculate();
+		}
+		let ekran = document.getElementById('ekran');
+		operand = ekran.innerHTML;
+		operator = "*";
+		value = "";
+	}
+
+	document.getElementById('n/').onclick = function () {
+		if (operator) {
+			calculate();
+		}
+		let ekran = document.getElementById('ekran');
+	     operand = ekran.innerHTML;
+	     operator = "/";
+	     value = "";
+	}	
+
+	document.getElementById('n=').onclick = function () {
+		calculate();
+	}
+
+	document.getElementById('off').onclick = function () {
+   		let ekran = document.getElementById('ekran');
+   		isOn = false;
+		ekran.innerHTML = "";
+		value = "";
+	}
+
+	document.getElementById('on').onclick = function() {
+   		let ekran = document.getElementById('ekran');
+   		isOn = true;
+		ekran.innerHTML = "0";
+		value = "";
+	}
+
+	document.getElementById('c').onclick = function() {
+		if (isOn) {
+			let ekran = document.getElementById('ekran');
+			ekran.innerHTML = Math.floor(Number(ekran.innerHTML)/10);
+			value = ekran.innerHTML;
+			if (ekran.innerHTML == 0) {
+				value = "";
+			}
+	    }
+	}
+
+
+</script>
+</body>
+</html>
